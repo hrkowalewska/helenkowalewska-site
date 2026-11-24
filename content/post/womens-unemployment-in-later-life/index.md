@@ -56,7 +56,7 @@ Exclusion criteria:
 ## What’s involved in the study
 
 One interview lasting 1-2 hours, at a date, time, and location of your choice. The interview can be
-online or in person, it’s up to you. 
+online or in person, it’s up to you.
 
 ## What you’ll get for taking part
 

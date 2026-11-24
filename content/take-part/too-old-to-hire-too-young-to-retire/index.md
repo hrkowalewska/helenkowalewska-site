@@ -83,5 +83,5 @@ If you have any questions about this study, please contact the lead researcher,
 Dr Helen Kowalewska, via email at <a
 href="mailto:hk775@bath.ac.uk">hk775@bath.ac.uk</a>.
 
-<sup>1 This study has been reviewed and given a favourable opinion 
+<sup>1 This study has been reviewed and given a favourable opinion
 by the University of Bath Social Science Research Ethics Committee [ref4885-7593].</sup>

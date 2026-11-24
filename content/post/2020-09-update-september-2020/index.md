@@ -34,4 +34,3 @@ During my maternity leave, I had a paper, co-authored with Agnese Vitali, accept
 In addition, I have just resubmitted a paper to another journal following minor revisions. The paper is part of my ESRC New Investigator Grant on the ‘welfare-state paradox’: work-family policies that bring women into the workforce also undermine women’s access to top-level positions. The article is a fuzzy-set Qualitative Comparative Analysis of the associations between ‘women-friendly’ state interventions and women’s share of board and executive positions across 22 industrialised countries. Overall, the analysis finds limited evidence in support of a welfare-state paradox. Moreover, widespread childcare services are associated with gender-diverse boards.
 
 I am continuing to work on my ESRC New Investigator Grant, looking at patterns of gender segregation in employment across different countries. I am also developing additional papers with colleagues on female breadwinners.
-
