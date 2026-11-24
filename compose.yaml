@@ -1,0 +1,15 @@
+services:
+  hugo:
+    # CI builds with this service too, so this tag is the one place the Hugo version is pinned.
+    image: ghcr.io/gohugoio/hugo:v0.168.0
+    # Drafts included. Polling keeps live reload working through the macOS bind mount. Rendering to
+    # memory keeps the dev server out of public/.
+    command: server -D --bind 0.0.0.0 --poll 700ms --renderToMemory
+    ports:
+      - "1313:1313"
+    volumes:
+      - .:/project
+      - hugo-cache:/cache
+
+volumes:
+  hugo-cache:

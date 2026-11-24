@@ -1,7 +1,7 @@
 # helenkowalewska.uk
 
-Helen Kowalewska's academic site. A Hugo static site on a hand-written theme, deployed to GitHub
-Pages.
+Helen Kowalewska's academic site. A Hugo static site on a hand-written theme, deployed to
+Cloudflare Pages.
 
 ## Running it locally
 
@@ -12,8 +12,9 @@ Tasks are defined in `poe_tasks.yaml` and run with [poethepoet](https://poethepo
 poe up        # dev server on http://localhost:1313, drafts included
 poe down      # stop it
 poe build     # production build into public/
-poe staging   # publish to the staging site for review
 ```
+
+Install the pre-commit hooks once after cloning with `pre-commit install`.
 
 Everything runs through a pinned Hugo container, so you need Docker but not Hugo itself. Local
 output matches CI exactly.
@@ -65,17 +66,15 @@ Roles, grants and teaching are not content pages. They live as short YAML lists 
 
 ## Reviewing changes
 
-`poe staging` builds the site and publishes it to the home server at
-`https://helen-staging.kowfam.uk`, so changes can be looked at before they go live. It builds from
-your working copy rather than from git, so uncommitted edits show up there too.
-
-The staging build is identical to production apart from the address and a `noindex` tag that keeps
-it out of search results.
+Push the work to a branch other than `main`. CI builds it and deploys a preview to
+`https://<branch>.helenkowalewska.pages.dev`, so changes can be looked at before they go live. A
+preview is identical to production apart from the address and a `noindex` tag that keeps it out of
+search results.
 
 ## Publishing
 
-Pushing to `master` builds and deploys to GitHub Pages automatically. No build output lives in the
-repo, and CI commits nothing.
+Pushing to `main` builds and deploys to Cloudflare Pages automatically. No build output lives in
+the repo, and CI commits nothing.
 
-`CLAUDE.md` has the architecture notes, the deployment details and the handful of gotchas worth
+`AGENTS.md` has the architecture notes, the deployment details and the handful of gotchas worth
 knowing before changing templates.

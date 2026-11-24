@@ -5,7 +5,7 @@
 {{- $css := resources.Get "css/main.css"
       | resources.ExecuteAsTemplate "css/main.css" (dict "fonts" $fonts) -}}
 {{- /* Only the dev server skips this. Gating on hugo.IsProduction would leave
-       the staging build serving unminified, unfingerprinted CSS, which is not
+       a preview build serving unminified, unfingerprinted CSS, which is not
        what ships and so not what should be reviewed. */ -}}
 {{- if not hugo.IsServer -}}
   {{- $css = $css | minify | fingerprint -}}
@@ -26,9 +26,9 @@
 <title>{{ $title }}</title>
 <meta name="description" content="{{ $desc | plainify | truncate 180 }}">
 <link rel="canonical" href="{{ .Permalink }}">
-{{- /* Two reasons, one tag. The staging vhost is real HTTPS on a resolvable
-       name, and canonical and og:url below carry that host, so keep it out of
-       the index. And a page the listings do not link to has nothing on it worth
+{{- /* Two reasons, one tag. A preview is real HTTPS on a resolvable
+       pages.dev name, and canonical and og:url below carry that host, so keep
+       it out of the index. And a page the listings do not link to has nothing on it worth
        indexing, so it stays out too rather than sitting in search results as a
        thinner copy of the row that should have been found instead. */ -}}
 {{- $noindex := ne hugo.Environment "production" -}}
